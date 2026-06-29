@@ -1,0 +1,55 @@
+{
+  "simulation_engine_version": "1.4.0",
+  "sequenzo_version": "0.1.40",
+  "numpy_version": "2.4.0",
+  "pandas_version": "2.3.3",
+  "python_version": "3.11.14",
+  "platform": "macOS-26.5-x86_64-i386-64bit",
+  "git_commit_simulation_bundle": "9a0bf849892b1d03b1118dca8041da3c7d8dd66a",
+  "git_dirty_simulation_bundle": true,
+  "git_commit_repo_root": "9a0bf849892b1d03b1118dca8041da3c7d8dd66a",
+  "git_dirty_repo_root": true,
+  "studies": {
+    "study1": {
+      "panels": "A-F",
+      "strands": [
+        1,
+        2,
+        3
+      ],
+      "metric": "chance_corrected_pseudo_r2",
+      "unit": "sequences per group"
+    },
+    "study2": {
+      "panels": "G-J",
+      "strands": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "metric": "normalized_paired_contrast",
+      "unit": "matched early/late pairs per replication",
+      "estimand": "early_vs_late_directional_contrast"
+    }
+  },
+  "directional_duration_mode": "matched",
+  "directional_pair_chunk_size": 100,
+  "normalization_mode": "none",
+  "distance_norm": "none",
+  "random_seed": 42,
+  "n_sequences_per_group": 2000,
+  "n_replications": 30,
+  "expcost_values": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "smoke_test": false,
+  "results_subdirectory": "main_raw"
+}

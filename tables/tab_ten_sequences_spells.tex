@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Ten illustration sequences in expanded state-sequence, DSS, and SPS form (Figure~\ref{fig:ten-sequences}).}
+\label{tab:ten-sequences-spells}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{@{}c l >{\RaggedRight\arraybackslash}p{3.2cm} >{\RaggedRight\arraybackslash}X@{}}
+\toprule
+\textbf{Seq.} & \textbf{Expanded state sequence} & \textbf{DSS (spell order)} & \textbf{SPS (states and durations)} \\
+\midrule
+1 & \texttt{U U U U U U} & \texttt{U} & $(U,6)$ \\
+2 & \texttt{E E E E E E} & \texttt{E} & $(E,6)$ \\
+3 & \texttt{U U E E U U} & \texttt{U}$\to$\texttt{E}$\to$\texttt{U} & $(U,2)\to(E,2)\to(U,2)$ \\
+4 & \texttt{E E U U E E} & \texttt{E}$\to$\texttt{U}$\to$\texttt{E} & $(E,2)\to(U,2)\to(E,2)$ \\
+5 & \texttt{E U U U U U} & \texttt{E}$\to$\texttt{U} & $(E,1)\to(U,5)$ \\
+6 & \texttt{U E E E E E} & \texttt{U}$\to$\texttt{E} & $(U,1)\to(E,5)$ \\
+7 & \texttt{E E U E E I} & \texttt{E}$\to$\texttt{U}$\to$\texttt{E}$\to$\texttt{I} & $(E,2)\to(U,1)\to(E,2)\to(I,1)$ \\
+8 & \texttt{E U E U E U} & \texttt{E}$\to$\texttt{U}$\to$\texttt{E}$\to$\texttt{U}$\to$\texttt{E}$\to$\texttt{U} & $(E,1)\to(U,1)\to(E,1)\to(U,1)\to(E,1)\to(U,1)$ \\
+9 & \texttt{E E E U E E} & \texttt{E}$\to$\texttt{U}$\to$\texttt{E} & $(E,3)\to(U,1)\to(E,2)$ \\
+10 & \texttt{E U U U E E} & \texttt{E}$\to$\texttt{U}$\to$\texttt{E} & $(E,1)\to(U,3)\to(E,2)$ \\
+\bottomrule
+\end{tabularx}
+\end{table}

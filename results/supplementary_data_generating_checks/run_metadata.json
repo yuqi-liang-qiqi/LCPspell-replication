@@ -1,0 +1,39 @@
+{
+  "simulation_engine_version": "1.4.0",
+  "sequenzo_version": "0.1.40",
+  "numpy_version": "2.4.0",
+  "pandas_version": "2.3.3",
+  "python_version": "3.11.14",
+  "platform": "macOS-26.5-x86_64-i386-64bit",
+  "git_commit_simulation_bundle": "9a0bf849892b1d03b1118dca8041da3c7d8dd66a",
+  "git_dirty_simulation_bundle": true,
+  "git_commit_repo_root": "9a0bf849892b1d03b1118dca8041da3c7d8dd66a",
+  "git_dirty_repo_root": true,
+  "experiment": "supplementary_data_generating_checks",
+  "random_seed": 42,
+  "n_sequences_per_group": 2000,
+  "n_replications": 30,
+  "event_timing_early_range_python_index": [
+    3,
+    6
+  ],
+  "event_timing_late_range_python_index": [
+    11,
+    14
+  ],
+  "inter_event_short_gap": [
+    1,
+    3
+  ],
+  "inter_event_long_gap": [
+    6,
+    8
+  ],
+  "strand_seed_offsets": {
+    "supplementary_event_order": 1000,
+    "supplementary_event_timing": 2000,
+    "supplementary_event_inter_duration": 3000,
+    "supplementary_small_perturbation_token": 4000,
+    "supplementary_small_perturbation_boundary": 5000
+  }
+}

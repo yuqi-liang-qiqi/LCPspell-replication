@@ -1,0 +1,42 @@
+{
+  "total_length": 20,
+  "n_states": 5,
+  "state_labels": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "n_sequences_per_group": 2000,
+  "n_replications": 30,
+  "expcost_values": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "lcpspell_params": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "om_indel_cost": 1.0,
+  "om_substitution_cost": "CONSTANT",
+  "distance_norm": "ElzingaStuder",
+  "directional_duration_mode": "matched",
+  "directional_pair_chunk_size": 100,
+  "log_distance_calls": false,
+  "duration_ref": 20,
+  "random_seed": 42,
+  "output_dir": "/Users/lei/Documents/Sequenzo_all_folders/LCPspell/lcpspell-paper-replication/results/robustness_elzinga"
+}
