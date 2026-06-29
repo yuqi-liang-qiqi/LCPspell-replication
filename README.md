@@ -76,7 +76,7 @@ Then run `./reproduce.sh`, or the pipeline steps listed under [Simulation](#simu
 │   └── data/                        # Datasets; also available inside Sequenzo
 ├── appendix_illustrations/          # Ten-sequence data and appendix distance tests
 ├── dissimilarity_measures_source_code/   # Reference C++ only; run code via Sequenzo
-└── dev/                             # Optional local tests (not required for replication)
+└── .gitignore                       # Git ignore rules for machine-generated files (Python __pycache__, .venv, .pytest_cache, .DS_Store, etc.); not part of the replication workflow
 ```
 
 ---
@@ -193,5 +193,4 @@ python3 empirical_demonstration/empirical_clustering_diagnostics.py
 
 - The primary simulation benchmark uses raw distances (`--norm none`). Chance-corrected pseudo-R² is scale-invariant; built-in and Elzinga normalizations are appendix robustness checks.
 - Spell methods use `duration_ref = T` (the observation window). The sensitivity grid varies `expcost` only.
-- Development utilities under `dev/` are for local checks and are not part of `./reproduce.sh`.
 

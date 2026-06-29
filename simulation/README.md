@@ -58,9 +58,3 @@ simulation/
 ```bash
 python3 simulation/run_main.py --norm none
 ```
-
-## Tests
-
-```bash
-python3 -m pytest ../dev/tests/
-```
