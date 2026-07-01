@@ -1,6 +1,6 @@
-# Representing Trajectories from State Sequences to Spell Sequences: Measuring Divergence and Convergence with Spell-Based Longest Common Prefixes
+# Representing Trajectories from State Sequences to Spell Sequences: Measuring Divergence and Convergence with Spell-Based Longest Common Prefixes and Suffixes
 
-Replication materials for the simulation sensitivity analysis, empirical clustering demonstrations, and online supplement figures described in the manuscript. The sections below follow the paper's headings so readers can match the paper to files in this repository.
+Replication materials for the simulation sensitivity analysis, empirical clustering demonstrations, and online-supplement figures described in the manuscript. The sections below follow the paper's headings so you can match the PDF version of the manuscript to files in this repository.
 
 ---
 
@@ -12,7 +12,11 @@ The folder `[dissimilarity_measures_source_code/](dissimilarity_measures_source_
 
 This repository holds what is specific to the paper: the simulation design (Studies 1 and 2), precomputed JSON results, the figure pipeline, worked appendix examples, and the pairfam analytic dataset used in the divergence demonstration. 
 
+Tested with: Sequenzo 0.1.40, Python 3.10+ (see `results/*/run_metadata.json` for the environment used to produce the bundled outputs).
+
 ---
+
+
 
 ## Setup
 
@@ -20,10 +24,11 @@ This repository holds what is specific to the paper: the simulation design (Stud
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-pip install sequenzo==0.1.41       # or: pip install -e /path/to/Sequenzo
+pip install sequenzo==0.1.40       # or: pip install -e /path/to/Sequenzo
 ```
 
 ---
+
 
 
 ## What to run, and how long it takes
@@ -134,7 +139,7 @@ python3 pipeline/02_plot_sensitivity_profiles.py
 
 ### Empirical demonstration
 
-**Divergence: pairfam family formation (LCP / LCPspell, PAM).** Analytic data: `empirical_demonstration/data/pairfam_activity_by_month.csv`. Per-method index-plot PDFs: `empirical_demonstration/divergence/`. The multi-method panel shown in the main PDF is assembled from those PDFs when compiling the manuscript; no single script here writes that composite.
+**Divergence: pairfam family formation (LCP / LCPspell, PAM).** Analytic data: `empirical_demonstration/data/pairfam_activity_by_month.csv` (derived from the public pairfam release; see the manuscript for the citation). Per-method index-plot PDFs: `empirical_demonstration/divergence/`. The multi-method panel shown in the main PDF is assembled from those PDFs when compiling the manuscript; no single script here writes that composite.
 
 ```bash
 python3 empirical_demonstration/divergence/pairfam_family_by_month_cluster_batch.py
